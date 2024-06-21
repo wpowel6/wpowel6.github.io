@@ -81,12 +81,17 @@
           <div class="cell">
             <img class="thumbnail" src="https://placehold.it/550x550">
             <h5>1/29 TESTING Session Worksheet</h5>
-          </div>
-          <div class="cell">
-            <body>
-              <h1>PDF Example</h1>
-              <p>Open a PDF file <a href="documents/WP Econ 2000 - LSUECON #1 - Demand and Supply Review WS.pdf" target="_blank">View PDF</a>.</p>
-            </body>
+            <div id="viewer" style="width: 100%; height: 500px;"></div>
+    <script type="text/javascript" src="https://cloudpdf.io/viewer.min.js"></script>
+    <script>
+      const config = {
+        documentId: 'ab7328fa-bbc1-43a1-9b72-b3ba6386c94e',
+        darkMode: true,
+      };
+      CloudPDF(config, document.getElementById('viewer')).then((instance) => {
+
+      });
+    </script>
           </div>
           <div class="cell">
             <img class="thumbnail" src="https://placehold.it/550x550">
