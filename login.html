@@ -16,7 +16,7 @@
             const user = users.find(user => user.username === username && user.password === password);
 
             if (user) {
-                localStorage.setItem('loggedin', 'true');
+                sessionStorage.setItem('loggedin', 'true'); <!-- Change back to local storage should session not work -->
                 window.location.href = 'studyguides.html';
             } else {
                 alert('Invalid credentials');
@@ -38,7 +38,7 @@
     </div>
   </div>
   <!-- End Top Bar -->
-  
+
     <h2>Login</h2>
     <form onsubmit="login(); return false;">
         <label for="username">Username:</label>
