@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="styles.css">
     <script>
         const users = [
-            { username: '888888', password: '888888' },
-            { username: 'user2', password: 'pass2' },
-            { username: 'user3', password: 'pass3' }
+            { username: 'admin', password: 'addmen' },
+            { username: 'anhdo', password: 'fun2learn' },
+            <!-- { username: 'user3', password: 'pass3' } -->
         ];
 
         function login() {
@@ -23,7 +23,7 @@
                 sessionStorage.setItem('password', password);
                 window.location.href = 'studyguides.html';
             } else {
-                alert('Invalid credentials');
+                alert('Invalid credentials. Contact us for help.');
             }
         }
     </script>
