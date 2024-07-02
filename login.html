@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Login to access this page</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styles.css">
     <script>
         const users = [
@@ -18,7 +18,7 @@
             const user = users.find(user => user.username === username && user.password === password);
 
             if (user) {
-                sessionStorage.setItem('loggedin', 'true');
+                localStorage.setItem('loggedin', 'true');
                 window.location.href = 'studyguides.html';
             } else {
                 alert('Invalid credentials. Contact us for help.');
