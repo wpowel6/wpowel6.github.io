@@ -55,6 +55,24 @@
       <div class="blog-post">
         <h3>Chapter 9 Study Guide</h3>
 
+
+        <head>
+          <div id="viewer" style="width: 100%; height: 500px;"></div>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Open PDF Button</title>
+            <script>
+                function openPDF() {
+                    // Replace 'your-pdf-file.pdf' with the path to your PDF file
+                    window.open('https://cloudpdf.io/viewer.min.js', '_blank');
+                }
+            </script>
+        </head>
+        <body>
+            <button onclick="openPDF()">Open PDF</button>
+        </body>
+
+
   <div id="viewer" style="width: 100%; height: 500px;"></div>
   <script type="text/javascript" src="https://cloudpdf.io/viewer.min.js"></script>
   <script>
